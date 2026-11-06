@@ -62,7 +62,15 @@
 
 *Mỗi lần dùng AI: hỏi gì, nhận gì, bạn sửa gì. Sau đó 2–3 câu: điều bạn hiểu ra hôm nay mà trước đó chưa hiểu.*
 🤖 AI log (Báo cáo cá nhân)
-Cấu hình API & An toàn Colab:Hỏi AI: Cách cài OPENAI_API_KEY qua Secrets, sửa lỗi 401 và bảo mật key/output khi nộp file .ipynb.Trả lời & Kiểm chứng: Mở tab Secrets (🔑), gán key, bật Notebook access; thực hiện Clear all outputs để không lộ vết dữ liệu trước khi tải file về.
-Xử lý lỗi Rate Limit (Gemini API):Hỏi AI: Nguyên nhân và cách sửa lỗi RateLimitError 429 của Gemini 3.5 Flash Lite.Trả lời & Kiểm chứng: Hiểu rõ giới hạn 15 RPM của bản Free Tier; chủ động thêm time.sleep(4.1) vào vòng lặp gọi API để không bị nghẽn quota.
-Bài toán tính tay (Hand Calculation):Hỏi AI: Công thức và lời giải 5 bài toán tính tay (sigmoid_0, f1_example, cosine_example, llm_cost_per_day...).Trả lời & Kiểm chứng: Tham khảo cách tính ($\sigma(0)=0.50$, $F1=0.73$, $\text{cosine}=0.60$, $\text{cost}=\$10.50$); tự tính lại từng bước ra giấy và chụp ảnh IMG_0135.HEIC nộp kèm.
-Thực nghiệm Challenge #1:Hỏi AI: Viết code thử nghiệm các ngưỡng quyết định ($0.2, 0.5, 0.8$) và góc nhìn nghiệp vụ chặn nhầm OTP ngân hàng.Trả lời & Kiểm chứng: Chạy code lấy chỉ số Precision/Recall/F1; chọn ngưỡng $0.8$ nhằm tối ưu Precision, tránh chặn nhầm tin nhắn OTP quan trọng.
+1. Cấu hình API & An toàn Colab:
+- Hỏi AI: Cách cài OPENAI_API_KEY qua Secrets, sửa lỗi 401 và bảo mật key/output khi nộp file .ipynb.
+- Trả lời & Kiểm chứng: Mở tab Secrets (🔑), gán key, bật Notebook access; thực hiện Clear all outputs để không lộ vết dữ liệu trước khi tải file về.
+2. Xử lý lỗi Rate Limit (Gemini API):
+- Hỏi AI: Nguyên nhân và cách sửa lỗi RateLimitError 429 của Gemini 3.5 Flash Lite.
+- Trả lời & Kiểm chứng: Hiểu rõ giới hạn 15 RPM của bản Free Tier
+3. Bài toán tính tay (Hand Calculation):
+- Hỏi AI: Công thức và lời giải 5 bài toán tính tay (sigmoid_0, f1_example, cosine_example, llm_cost_per_day...).
+- Trả lời & Kiểm chứng: Tham khảo cách tính ($\sigma(0)=0.50$, $F1=0.73$, $\text{cosine}=0.60$, $\text{cost}=\$10.50$); tự tính lại từng bước ra giấy và chụp ảnh IMG_0135.HEIC nộp kèm.
+4. Thực nghiệm Challenge
+- Hỏi AI: Viết code thử nghiệm các ngưỡng quyết định ($0.2, 0.5, 0.8$) và góc nhìn nghiệp vụ chặn nhầm OTP ngân hàng.
+- Trả lời & Kiểm chứng: Chạy code lấy chỉ số Precision/Recall/F1; chọn ngưỡng $0.8$ nhằm tối ưu Precision, tránh chặn nhầm tin nhắn OTP quan trọng.
